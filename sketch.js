@@ -213,7 +213,7 @@ buttonST.addClass('buttonUsed');
  if (scroll > windowHeight) {
    about=0;
    document.location.reload();
-window.open("https://federicocordelli.github.io/169/");
+window.open("https://federicocordelli.github.io/PROLOGUE-COMPLEX/");
 
 }
 
@@ -350,7 +350,7 @@ function sourcy() {
 */
 
 function starty() {
-  window.open("https://federicocordelli.github.io/dig/");
+  window.open("https://federicocordelli.github.io/PROLOGUE-COMPLEX/");
 }
 
 

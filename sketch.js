@@ -212,8 +212,9 @@ buttonST.addClass('buttonUsed');
 }
  if (scroll > windowHeight) {
    about=0;
-   document.location.reload();
+
 window.open("https://federicocordelli.github.io/PROLOGUE-COMPLEX/");
+document.location.reload();
 
 }
 

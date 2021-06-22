@@ -25,8 +25,13 @@ mySound = loadSound('addons/theshepherd_audio');
   intlBol = loadFont('addons/SuisseIntl-Bold.otf');
   druk = loadFont('addons/DrukCond-Super.ttf');
 
-cover = loadImage("addons/cover+titolo.png")
-
+cover = loadImage("addons/cornice/cover.png");
+type = loadImage("addons/cornice/txt.png");
+susy = loadImage("addons/cornice/susy.png");
+wilfrid = loadImage("addons/cornice/wilfrid.png");
+connor = loadImage("addons/cornice/connor.png");
+titus = loadImage("addons/cornice/titus.png");
+vicary = loadImage("addons/cornice/vicary.png");
 
 
 
@@ -93,6 +98,12 @@ function draw() {
   imageMode(CENTER);
 
 image(cover, (width/2),(height/2), windowWidth, (windowWidth/16)*9);
+image(susy, (width/2)+(mouseX*0.01),(height/2), windowWidth, (windowWidth/16)*9);
+image(titus, (width/2)-(mouseX*0.03),(height/2), windowWidth, (windowWidth/16)*9);
+image(wilfrid, (width/2)-(mouseX*0.01),(height/2), windowWidth, (windowWidth/16)*9);
+image(vicary, (width/2)+(mouseX*0.02),(height/2), windowWidth, (windowWidth/16)*9);
+image(connor, (width/2)+(mouseX*0.06),(height/2), windowWidth, (windowWidth/16)*9);
+image(type, (width/2),(height/2), windowWidth, (windowWidth/16)*9);
 
 
 
@@ -142,11 +153,11 @@ pop();
 
 push();
 noStroke();
-fill("#000")
+fill("#001110")
 rect(0,0,windowWidth,0+scroll);
 pop();
 push();
-  fill('yellow');
+  fill('#f56c63');
   textAlign(CENTER);
   textFont(intlBol);
   textSize(100);
@@ -209,6 +220,8 @@ buttonST.addClass('buttonUsed');
   button.removeClass('buttonUsed');
   button.addClass('button');
 
+  scroll=0;
+
 }
  if (scroll > windowHeight) {
    about=0;
@@ -245,6 +258,8 @@ pop();
 
 //Resize Button Function
 function abouty() {
+  window.open("https://federicocordelli.github.io/ABOUT-COMPLEX/","_self");
+  /*
   about = 1;
   button.removeClass('button');
   button.addClass('buttonUsed');
@@ -252,6 +267,7 @@ function abouty() {
   buttonE.addClass('button');
   buttonST.removeClass('button');
   buttonST.addClass('buttonUsed');
+  */
 }
 /*
 function innocency() {
@@ -351,7 +367,7 @@ function sourcy() {
 */
 
 function starty() {
-  window.open("https://federicocordelli.github.io/PROLOGUE-COMPLEX/");
+  window.open("https://federicocordelli.github.io/PROLOGUE-COMPLEX/","_self");
 }
 
 
